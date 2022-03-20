@@ -22,7 +22,17 @@ public class Dog
     {
     	return age;
     }
-    	    	
+
+    public boolean isOlder(int n) {
+        boolean bb = n < age;
+        return bb;
+    }
+
+    public boolean isYounger(int m) {
+        boolean bs = m > age;
+        return bs;
+    }
+
     public String toString()
     {
     	return "" + age + " " + name;

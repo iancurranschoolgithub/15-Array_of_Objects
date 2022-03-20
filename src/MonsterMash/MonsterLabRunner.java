@@ -19,20 +19,21 @@ public class MonsterLabRunner
 
 		for(int i=0; i<size;i++)
 		{
-			//read in monster values 
-	
-			//ask for ht
-			
-			//ask for wt
-			
-			//ask for age
-	
+			System.out.println("Monster height: ");
+			int height = keyboard.nextInt();
+			System.out.println("Monster weight: ");
+			int weight = keyboard.nextInt();
+			System.out.println("Monster age: ");
+			int age = keyboard.nextInt();
+			herd.add( i, new Monster(height, weight, age));
 			//instantiate a new Monster() and add it to the herd			
 			
 		}		
 		
 		System.out.println("HERD :: "+herd+"\n");
+		System.out.println("SMALLEST :: "+herd.getSmallest()+"\n");
+	    System.out.println("LARGEST :: "+herd.getLargest()+"\n");
 		//print out the other stats
-			
-	}		
+
+   }
 }
